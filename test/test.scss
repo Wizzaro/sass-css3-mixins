@@ -1,0 +1,351 @@
+@import '../css3-mixins';
+
+/*Box Sizing Test*/
+
+.box-sizing {
+    @include box-sizing(border-box);
+}
+
+/*Resize Test*/
+
+.resize {
+    @include resize(both);
+}
+
+/*Columns Test*/
+
+.columns {
+    @include columns(100px 3);
+}
+
+.column-width {
+    @include column-width(100px);
+}
+
+.column-count {
+    @include column-count(3);
+}
+
+.column-gap {
+    @include column-gap(30px);
+}
+
+.column-rule {
+    @include column-rule(4px outset #ff00ff);
+}
+
+.column-rule-color {
+    @include column-rule-color(#ff00ff);
+}
+
+.column-rule-style {
+    @include column-rule-style(dotted);
+}
+
+.column-rule-width {
+    @include column-rule-width(4px);
+}
+
+.column-span {
+    @include column-span(1);
+}
+
+/*Object Test*/
+.object-fit {
+    @include object-fit(cover);
+}
+
+.object-position {
+    @include object-position(0 0);
+}
+
+/*Opacity Test*/
+
+.opacity {
+    @include opacity(70);
+}
+
+.opacity {
+    @include opacity(0.7);
+}
+
+/*Border Radius Test*/
+
+.border-radius {
+    @include border-radius(50%)
+}
+
+.border-top-left-radius {
+    @include border-top-left-radius(50%);
+}
+
+.border-top-right-radius {
+    @include border-top-right-radius(50%);
+}
+
+.border-bottom-right-radius {
+    @include border-bottom-right-radius(50%);
+}
+
+.border-bottom-left-radius {
+    @include border-bottom-left-radius(50%);
+}
+
+/*Border Image Test*/
+
+.border-image {
+	@include border-image(url(test.png) 100% 1 0 stretch);
+}
+
+.border-image-source {
+	@include border-image-source(url(test.png));
+}
+
+.border-image-slice {
+	@include border-image-slice(30%);
+}
+
+.border-image-width {
+	@include border-image-width(100px);
+}
+
+.border-image-outset {
+	@include border-image-outset(100px);
+}
+
+.border-image-repeat {
+	@include border-image-repeat(stretch);
+}
+
+/*Background Size Test*/
+
+.background-size{
+    @include background-size(cover);
+}
+
+/*Background Gradient Test*/
+
+.gradient {
+    @include gradient(linear-gradient(left,rgba(255,0,0,0),rgba(255,0,0,0.7)));
+}
+
+/*Box Shadow Test*/
+
+.box-shadow {
+    @include box-shadow(10px 10px 5px #888888);
+}
+
+/*Text Shadow Test*/
+
+.text-shadow {
+    @include text-shadow(2px 2px #ff0000);
+}
+
+/* Text Align Last */
+.text-align-last {
+    @include text-align-last(center);
+}
+
+/*Text Overflow Test*/
+
+.text-overflow {
+    @include text-overflow(clip);
+}
+
+/*Transform Test*/
+
+.transform {
+    @include transform(translate(50px, 100px));
+}
+
+.transform-origin {
+    @include transform-origin(20% 40%);
+}
+
+/*Transforms 2d Test*/
+
+.transform-2d-matrix {
+	@include transform-2d-matrix("1, -0.3, 0, 1, 0, 0");
+}
+
+.transform-2d-translate {
+	@include transform-2d-translate("20px, 10px");
+}
+
+.transform-2d-translateX {
+	@include transform-2d-translateX(20px);
+}
+
+.transform-2d-translateY {
+	@include transform-2d-translateY(10px);
+}
+
+.transform-2d-scale {
+	@include transform-2d-scale("20px, 10px");
+}
+
+.transform-2d-scaleX {
+	@include transform-2d-scaleX(20px);
+}
+
+.transform-2d-scaleY {
+	@include transform-2d-scaleY(10px);
+}
+
+.transform-2d-rotate {
+	@include transform-2d-rotate(10deg);
+}
+
+.transform-2d-skew {
+	@include transform-2d-skew("20deg, 10deg")
+}
+
+.transform-2d-skewX {
+	@include transform-2d-skewX(20deg);
+}
+
+.transform-2d-skewY {
+	@include transform-2d-skewY(10deg);
+}
+
+
+/*Transforms 3d Test*/
+
+//tranform-style
+.transform-style {
+    @include transform-style(flat);
+}
+
+//perspective
+.perspective {
+    @include perspective(500px)
+}
+
+
+//perspective-origin
+.perspective-origin {
+    @include perspective-origin(20% 10%);
+}
+
+//backface-visibility
+.backface-visibility {
+    @include backface-visibility(visible);
+}
+
+//transforms
+.transform-3d-matrix3d {
+	@include transform-3d-matrix3d("1, -0.3, 0, 1, 0, 0, 1, -0.3, 0, 1, 0, 0, 2, 2")
+}
+
+.transform-3d-translate3d {
+	@include transform-3d-translate3d("30px, 20px, 10px")
+}
+
+.transform-3d-translateX {
+	@include transform-3d-translateX(30px);
+}
+
+.transform-3d-translateY {
+	@include transform-3d-translateY(20px);
+}
+
+.transform-3d-translateZ {
+	@include transform-3d-translateZ(10px);
+}
+
+.transform-3d-scale3d {
+	@include transform-3d-scale3d("30px, 20px, 10px")
+}
+
+.transform-3d-scaleX {
+	@include transform-3d-scaleX(30px);
+}
+
+.transform-3d-scaleY {
+	@include transform-3d-scaleY(20px);
+}
+
+.transform-3d-scaleZ {
+	@include transform-3d-scaleZ(10px);
+}
+
+.transform-3d-rotate3d {
+	@include transform-3d-rotate3d("30deg, 20deg, 10deg");
+}
+
+.transform-3d-rotateX {
+	@include transform-3d-rotateX(30deg);
+}
+
+.transform-3d-rotateY {
+	@include transform-3d-rotateY(20deg);
+}
+
+.transform-3d-rotateZ {
+	@include transform-3d-rotateZ(10deg);
+}
+
+.transform-3d-perspective {
+	@include transform-3d-perspective(500px);
+}
+
+/*Transtion Test*/
+
+.transition {
+    @include transition(width 3s linear 1s);
+}
+
+.transition-property {
+    @include transition-property(width);
+}
+
+.transition-duration {
+    @include transition-duration(3s);
+}
+
+.transition-timing-function {
+    @include transition-timing-function(ease);
+}
+
+.transition-delay {
+    @include transition-delay(1s);
+}
+
+/*Animation Test*/
+
+.animation {
+    @include animation(mymove 5s linear 3s 2 normal forwards running);
+}
+
+.animation-name {
+    @include animation-name(mymove);
+}
+
+.animation-duration {
+    @include animation-duration(5s);
+}
+
+.animation-timing-function {
+    @include animation-timing-function(ease);
+}
+
+.animation-delay {
+    @include animation-delay(3s);
+}
+
+.animation-iteration-count {
+    @include animation-iteration-count(2);
+}
+
+.animation-direction {
+    @include animation-direction(normal);
+}
+
+.animation-fill-mode {
+    @include animation-fill-mode(forwards);
+}
+
+@include keyframes(mymove) {
+    from {top: 0px;}
+    to {top: 200px;}
+}

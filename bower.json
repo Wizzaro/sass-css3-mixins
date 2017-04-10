@@ -1,0 +1,27 @@
+{
+  "name": "wizzaro-sass-css3-mixins",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "keywords": [
+    "css",
+    "css3",
+    "sass",
+    "mixins"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "wizzaro-sass-flexbox-mixins": "*"
+  }
+}

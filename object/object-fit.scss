@@ -1,0 +1,3 @@
+@mixin object-fit($value: fill) {
+    @include css3-property(object-fit, $value);
+}
